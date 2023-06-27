@@ -1,0 +1,348 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #fff;
+    font-family: "Open Sans",sans-serif;
+    font-size: 16px;
+}
+.contenedor{
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* ----------------HEADER----------------- */
+header{
+    background: url('../img/fondoheader.png') rgba(1, 25, 87,1);
+    background-repeat: no-repeat;
+    background-position: center;
+    max-height: 600px;
+}
+header .menu{
+    margin: 40px 0px;
+    text-align: right;
+}
+header .menu a{
+    margin: 0px 20px;
+    color: #fff;
+    padding-bottom: 9px;
+    display: inline-block;
+    font-size: 1em;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+}
+header .menu a:hover{
+    border-bottom: 2px solid #fff;
+}
+header .contenedor-texto{
+    display: flex;
+    margin: 190px;
+    justify-content: center;
+    align-content: center;
+}
+header .contenedor-texto .texto{
+    border: 2px solid rgba(255, 255, 255, .8);
+    border-radius: 3px;
+    display: inline-block;
+    text-align: center;
+    padding: 20px 60px;
+}
+header .contenedor-texto .texto .nombre{
+    color: #fff;
+    font-weight: 300;
+    font-size: 50px;
+    margin-bottom: 10px;
+    line-height: 50px;
+}
+header .contenedor-texto .texto .profesion{
+    color: #fff;
+    font-weight: 300;
+    font-size: 25px;
+    line-height: 25px;
+    
+}
+
+/* ----------------MAIN TRABAJOS----------------- */
+.main .contenedor{
+    overflow: visible;
+}
+.main .acerca-de{
+    text-align: center;
+}
+.main .acerca-de .foto{
+    margin-top: -60px;
+}
+.main .acerca-de .foto img{
+    vertical-align: top;
+    border-radius: 50%;
+    border: 5px solid  rgba(255, 255, 255, .2);
+}
+.main .acerca-de .texto{
+    color: #5a5a5a;
+    font-weight: 600;
+    font-size: 1em;
+    line-height: 30px;
+    width: 80%;
+    margin: 40px auto 60px auto;
+}
+.main .acerca-de .texto .titulo{
+    font-size: 34px;
+    margin-bottom: 40px;
+    font-weight: 300;
+    color: #dd820d;
+    text-align: center;
+}
+.main .acerca-de .texto .bold{
+    color: #3895ea;
+    text-decoration: underline;
+}
+.main .trabajos{
+    background: #11174e;
+    padding: 30px 0px;
+    
+}
+.main .trabajos .titulo{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.main .trabajos .contenedor-trabajos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+.main .trabajos .contenedor-trabajos .trabajo{
+    width: 23%;
+}
+.main .trabajos .contenedor-trabajos .trabajo .imgt{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.main .trabajos .contenedor-trabajos .trabajo .imgt img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 10px;
+}
+.main .trabajos .contenedor-trabajos .trabajo .descripcion{
+    text-align: center;
+    padding: 20px 0px;
+    align-items: center;
+}
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .nombre{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 700;
+
+}
+.main .trabajos .contenedor-trabajos .trabajo .descripcion .categoria{
+    color: #fff;
+    font-size: 1em;
+    font-weight: 300;
+}
+/* ----------------MAIN FORMACION----------------- */
+.main .formacion{
+    background: #161d5e;
+    overflow: hidden;
+    padding: 30px 0px;
+}
+.main .formacion .contenedor .titulo{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.main .formacion .contenedor .contenedor-formacion{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.main .formacion .contenedor .contenedor-formacion .formacion1{
+    width: 23%;
+}
+.main .formacion .contenedor .contenedor-formacion .formacion1 .imgf{
+    width: 100%;
+    margin-bottom: 10px;
+}
+.main .formacion .contenedor .contenedor-formacion .formacion1 .imgf img{
+    width: 100%;
+    vertical-align: top;
+    border-radius: 10px;
+}
+.main .formacion .contenedor .contenedor-formacion .formacion1 .descripcion{
+    color: #fff;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.main .formacion .contenedor .contenedor-formacion .formacion1 .descripcion .nombre{
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+.main .formacion .contenedor .contenedor-formacion .formacion1 .descripcion .informacion{
+    font-weight: 300;
+}
+/* ----------------MAIN EXPERIENCIA----------------- */
+.main .experiencia {
+    background: #2b0991;
+    overflow: hidden;
+    padding: 30px 0px;
+}
+.main .experiencia .contenedor .titulo{
+    color: #fff;
+    font-weight: 300;
+    font-size: 34px;
+    margin-bottom: 60px;
+    text-align: center;
+}
+.main .experiencia .contenedor .contenedor-xp{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between
+}
+.main .experiencia .contenedor .contenedor-xp .xp{
+    width: 48%;
+    color: #fff;
+}
+.main .experiencia .contenedor .contenedor-xp .xp .nombre{
+    font-weight: 700;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+.main .experiencia .contenedor .contenedor-xp .xp .informacion{
+    font-weight: 300;
+}
+.main .experiencia .contenedor .contenedor-xp .xp .informacion ul li{
+    padding-bottom: 10px;
+}
+.main .experiencia .contenedor .contenedor-xp .xp .informacion ul li span{
+    font-weight: 700;
+}
+.main .experiencia .contenedor .contenedor-xp .xp .imge{
+    width: 100%;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+}
+.main .experiencia .contenedor .contenedor-xp .xp .imge img{
+    width: 50%;
+    vertical-align: top;
+    border-radius: 50px;
+}
+
+
+/* ----------------Footer----------------- */
+
+footer .contacto{
+    padding: 60px 0px;
+    background: #11174e;
+}
+footer .contacto .titulo{
+    color: #fff;
+    font-size: 34px;
+    font-weight: 300;
+    text-align: center;
+    margin-bottom: 60px;
+}
+footer .contacto .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"],
+footer .contacto .formulario textarea{
+    border: 2px solid #cecece;
+    border-radius: 5px;
+    padding: 15px 20px ;
+    font-size: 20px;
+    color: #a4a4a4;
+}
+footer .contacto .formulario input[type="text"],
+footer .contacto .formulario input[type="email"]{
+    width: 49%;
+    margin-bottom: 15px;
+}
+footer .contacto .formulario textarea{
+    width: 100%;
+    margin-bottom: 15px;
+    height: 100px;
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 100%;
+    max-height: 300px;
+}
+footer .contacto .formulario .Boton{
+    margin: auto;
+    background: #373535;
+    color: #fff;
+    border-radius: 3px;
+    padding: 15px 40px;
+    cursor: pointer;
+}
+footer .contacto .formulario .Boton:hover{
+    background: #000000;
+}
+footer .contacto .formulario input[type="text"]:focus,
+footer .contacto .formulario input[type="email"]:focus,
+footer .contacto .formulario textarea:focus{
+    border: #000000;
+}
+footer .redes{
+    background: #1e2b38;
+    padding: 60px;
+}
+footer .redes .contenedor{
+    display: flex;
+    justify-content: center;
+}
+footer .redes .contenedor a{
+    width: 33%;
+    color: #fff;
+    display: block;
+    text-align: center;
+    width: 100%;
+    padding: 15px 0px;
+    border-radius: 3px;
+    font-size: 30px;
+    margin: 0 20px;
+}
+footer .redes .contenedor .facebook:hover{
+    background: #1877f2;
+}
+footer .redes .contenedor .instagram:hover{
+    background: #e1306c;
+}
+footer .redes .contenedor .github:hover{
+    background: #333;
+}
+/* ----------------MEDIA QUERIES----------------- */
+@media screen and (max-width: 800px){
+    header .menu{
+        text-align: center;
+    }
+    .main .trabajos .contenedor-trabajos .trabajo{
+        width: 46%;
+    }
+    .main .formacion .contenedor .contenedor-formacion .formacion1{
+        width: 46%;
+    }
+    .main .experiencia .contenedor .contenedor-xp .xp{
+        width: 99%;
+    }  
+}
+@media screen and (max-width: 420px){
+    header .contenedor-texto .texto .nombre{
+        font-size: 35px;
+    }
+    header .contenedor-texto .texto .profesion{
+        font-size: 18px;
+    }
+}
